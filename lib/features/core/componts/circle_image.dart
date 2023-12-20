@@ -1,6 +1,5 @@
 import 'package:article_app/features/config/theme/colors.dart';
 import 'package:article_app/features/core/componts/photo_viewer/photo_view_page.dart';
-import 'package:article_app/features/core/utils/logger_utils.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';

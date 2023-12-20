@@ -17,6 +17,14 @@ class ArticleTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String imageUrl = "";
+    final media = (articleModel.media ?? [const MediaModel()]);
+    if (media.isNotEmpty) {
+      final mediaMetadata = (media.first!.mediaMetadata ?? [const MediaMetadataModel()]);
+      if (mediaMetadata.isNotEmpty) {
+        imageUrl = mediaMetadata.first!.url ?? "";
+      }
+    }
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 3),
       child: CupertinoButton(
@@ -34,19 +42,16 @@ class ArticleTile extends StatelessWidget {
             child: Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-              decoration: BoxDecoration(color: whiteColor, borderRadius: BorderRadius.circular(10.r)),
+              decoration:
+                  BoxDecoration(color: whiteColor, borderRadius: BorderRadius.circular(10.r)),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   CircleImage(
-                    url: ((articleModel.media ?? [const MediaModel()]).first!.mediaMetadata ??
-                                [const MediaMetadataModel()])
-                            .first!
-                            .url ??
-                        "",
+                    url: imageUrl,
                     size: 50.r,
-                    isClickable: true,
+                    isClickable: false,
                   ),
                   const SizedBox(
                     width: 5,
@@ -77,7 +82,7 @@ class ArticleTile extends StatelessWidget {
                                       color: greyColor))),
                           Expanded(
                               child: Text(articleModel.publishedDate ?? "-",
-                                  textAlign: TextAlign.start,
+                                  textAlign: TextAlign.end,
                                   style: TextStyle(
                                       fontWeight: FontWeight.w400,
                                       fontSize: 12.sp,

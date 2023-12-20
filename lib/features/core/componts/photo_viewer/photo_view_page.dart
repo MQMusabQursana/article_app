@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:photo_view/photo_view.dart';
 
-///This page enables us to zoom in and out of images - using photoview
+///This page allow us to zoom in and out of images - using photoview
 class PhotoViewerPage extends StatelessWidget {
   static const path = "/photo-viewer";
   static const name = "photo-viewer-page";

@@ -32,7 +32,7 @@ class ArticleModel extends ArticleEntity with _$ArticleModel {
       name: 'media',
     )
     List<MediaModel>? media,
-    @JsonKey(name: 'etaId', includeToJson: false) int? etaId,
+    @JsonKey(name: 'eta_id') int? etaId,
   }) = _ArticleModel;
 
   factory ArticleModel.fromJson(Map<String, dynamic> json) => _ArticleModel.fromJson(json);

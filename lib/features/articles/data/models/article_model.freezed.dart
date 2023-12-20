@@ -60,7 +60,7 @@ mixin _$ArticleModel {
   List<String>? get geoFacet => throw _privateConstructorUsedError;
   @JsonKey(name: 'media')
   List<MediaModel>? get media => throw _privateConstructorUsedError;
-  @JsonKey(name: 'etaId', includeToJson: false)
+  @JsonKey(name: 'eta_id')
   int? get etaId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -96,7 +96,7 @@ abstract class $ArticleModelCopyWith<$Res> {
       @JsonKey(name: 'per_facet') List<String>? perFacet,
       @JsonKey(name: 'geo_facet') List<String>? geoFacet,
       @JsonKey(name: 'media') List<MediaModel>? media,
-      @JsonKey(name: 'etaId', includeToJson: false) int? etaId});
+      @JsonKey(name: 'eta_id') int? etaId});
 }
 
 /// @nodoc
@@ -252,7 +252,7 @@ abstract class _$$ArticleModelImplCopyWith<$Res>
       @JsonKey(name: 'per_facet') List<String>? perFacet,
       @JsonKey(name: 'geo_facet') List<String>? geoFacet,
       @JsonKey(name: 'media') List<MediaModel>? media,
-      @JsonKey(name: 'etaId', includeToJson: false) int? etaId});
+      @JsonKey(name: 'eta_id') int? etaId});
 }
 
 /// @nodoc
@@ -401,7 +401,7 @@ class _$ArticleModelImpl implements _ArticleModel {
       @JsonKey(name: 'per_facet') final List<String>? perFacet,
       @JsonKey(name: 'geo_facet') final List<String>? geoFacet,
       @JsonKey(name: 'media') final List<MediaModel>? media,
-      @JsonKey(name: 'etaId', includeToJson: false) this.etaId})
+      @JsonKey(name: 'eta_id') this.etaId})
       : _desFacet = desFacet,
         _orgFacet = orgFacet,
         _perFacet = perFacet,
@@ -512,7 +512,7 @@ class _$ArticleModelImpl implements _ArticleModel {
   }
 
   @override
-  @JsonKey(name: 'etaId', includeToJson: false)
+  @JsonKey(name: 'eta_id')
   final int? etaId;
 
   @override
@@ -596,28 +596,27 @@ class _$ArticleModelImpl implements _ArticleModel {
 
 abstract class _ArticleModel implements ArticleModel {
   const factory _ArticleModel(
-          {@JsonKey(name: 'uri') final String? uri,
-          @JsonKey(name: 'url') final String? url,
-          @JsonKey(name: 'id') final int? id,
-          @JsonKey(name: 'asset_id') final int? assetId,
-          @JsonKey(name: 'source') final String? source,
-          @JsonKey(name: 'published_date') final String? publishedDate,
-          @JsonKey(name: 'updated') final String? updated,
-          @JsonKey(name: 'section') final String? section,
-          @JsonKey(name: 'subsection') final String? subsection,
-          @JsonKey(name: 'nytdsection') final String? nytdsection,
-          @JsonKey(name: 'adx_keywords') final String? adxKeywords,
-          @JsonKey(name: 'byline') final String? byline,
-          @JsonKey(name: 'type') final String? type,
-          @JsonKey(name: 'title') final String? title,
-          @JsonKey(name: 'abstract') final String? abstract,
-          @JsonKey(name: 'des_facet') final List<String>? desFacet,
-          @JsonKey(name: 'org_facet') final List<String>? orgFacet,
-          @JsonKey(name: 'per_facet') final List<String>? perFacet,
-          @JsonKey(name: 'geo_facet') final List<String>? geoFacet,
-          @JsonKey(name: 'media') final List<MediaModel>? media,
-          @JsonKey(name: 'etaId', includeToJson: false) final int? etaId}) =
-      _$ArticleModelImpl;
+      {@JsonKey(name: 'uri') final String? uri,
+      @JsonKey(name: 'url') final String? url,
+      @JsonKey(name: 'id') final int? id,
+      @JsonKey(name: 'asset_id') final int? assetId,
+      @JsonKey(name: 'source') final String? source,
+      @JsonKey(name: 'published_date') final String? publishedDate,
+      @JsonKey(name: 'updated') final String? updated,
+      @JsonKey(name: 'section') final String? section,
+      @JsonKey(name: 'subsection') final String? subsection,
+      @JsonKey(name: 'nytdsection') final String? nytdsection,
+      @JsonKey(name: 'adx_keywords') final String? adxKeywords,
+      @JsonKey(name: 'byline') final String? byline,
+      @JsonKey(name: 'type') final String? type,
+      @JsonKey(name: 'title') final String? title,
+      @JsonKey(name: 'abstract') final String? abstract,
+      @JsonKey(name: 'des_facet') final List<String>? desFacet,
+      @JsonKey(name: 'org_facet') final List<String>? orgFacet,
+      @JsonKey(name: 'per_facet') final List<String>? perFacet,
+      @JsonKey(name: 'geo_facet') final List<String>? geoFacet,
+      @JsonKey(name: 'media') final List<MediaModel>? media,
+      @JsonKey(name: 'eta_id') final int? etaId}) = _$ArticleModelImpl;
 
   factory _ArticleModel.fromJson(Map<String, dynamic> json) =
       _$ArticleModelImpl.fromJson;
@@ -683,7 +682,7 @@ abstract class _ArticleModel implements ArticleModel {
   @JsonKey(name: 'media')
   List<MediaModel>? get media;
   @override
-  @JsonKey(name: 'etaId', includeToJson: false)
+  @JsonKey(name: 'eta_id')
   int? get etaId;
   @override
   @JsonKey(ignore: true)

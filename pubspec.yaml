@@ -21,16 +21,25 @@ version: 1.0.0+1
 environment:
   sdk: '>=3.3.0-91.0.dev <4.0.0'
 dependencies:
+  #For display a reasonable layout on different screen sizes!
   flutter_screenutil: ^5.9.0
+  # allow us to zoom in and out of images
   photo_view: ^0.14.0
+  #For Display Network Images
   cached_network_image: ^3.3.0
   go_router: ^12.1.3
+  #For Style
   google_fonts: ^6.1.0
   get_it: ^7.6.4
+  #For printing
   logger: ^2.0.2+1
+  #For  Apis
   dio: ^5.4.0
+  #help for Api Impl
   retrofit: '>=4.0.0 <5.0.0'
+  #State management
   flutter_riverpod: ^2.4.9
+  #Deal With Json & Models
   freezed_annotation: ^2.4.1
 
 
@@ -43,9 +52,18 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  #For testing
+  mocktail: ^1.0.2
+  #Help us to testing abstract classes
+  mockito: ^5.4.4
+  #help for Api Impl - Generate The File
   retrofit_generator: '>=7.0.0 <8.0.0'
+  #Deal With Json & Models - Generate the File
   freezed: ^2.4.6
   json_serializable: ^6.7.1
+
+  #Use For Generate All Our Files
+  #flutter pub run build_runner build --delete-conflicting-outputs
   build_runner: ^2.4.7
   flutter_test:
     sdk: flutter

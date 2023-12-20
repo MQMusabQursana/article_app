@@ -16,6 +16,14 @@ class ArticleDetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String imageUrl = "";
+    final media = (articleModel.media ?? [const MediaModel()]);
+    if (media.isNotEmpty) {
+      final mediaMetadata = (media.last!.mediaMetadata ?? [const MediaMetadataModel()]);
+      if (mediaMetadata.isNotEmpty) {
+        imageUrl = mediaMetadata.last!.url ?? "";
+      }
+    }
     return Scaffold(
       body: CustomScrollView(
         slivers: [
@@ -28,13 +36,11 @@ class ArticleDetailsPage extends StatelessWidget {
                 Hero(
                   tag: "image",
                   child: SquareImage(
-                      url: ((articleModel.media ?? [const MediaModel()]).first!.mediaMetadata ??
-                                  [const MediaMetadataModel()])
-                              .last!
-                              .url ??
-                          "",
-                      width: double.infinity,
-                      height: double.infinity),
+                    url: imageUrl,
+                    width: double.infinity,
+                    height: double.infinity,
+                    isClickable: true,
+                  ),
                 ),
                 Positioned(
                     bottom: 0,

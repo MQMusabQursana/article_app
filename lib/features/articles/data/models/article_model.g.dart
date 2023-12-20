@@ -38,7 +38,7 @@ _$ArticleModelImpl _$$ArticleModelImplFromJson(Map<String, dynamic> json) =>
       media: (json['media'] as List<dynamic>?)
           ?.map((e) => MediaModel.fromJson(e as Map<String, dynamic>))
           .toList(),
-      etaId: json['etaId'] as int?,
+      etaId: json['eta_id'] as int?,
     );
 
 Map<String, dynamic> _$$ArticleModelImplToJson(_$ArticleModelImpl instance) =>
@@ -63,4 +63,5 @@ Map<String, dynamic> _$$ArticleModelImplToJson(_$ArticleModelImpl instance) =>
       'per_facet': instance.perFacet,
       'geo_facet': instance.geoFacet,
       'media': instance.media,
+      'eta_id': instance.etaId,
     };

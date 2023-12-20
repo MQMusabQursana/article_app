@@ -43,7 +43,7 @@ class SquareImage extends StatelessWidget {
           ),
           onPressed: (isClickable ?? true)
               ? () {
-                  context.goNamed(PhotoViewerPage.name, pathParameters: {"url": url});
+                  GoRouter.of(context).pushNamed(PhotoViewerPage.name, extra: url);
                 }
               : null,
           child: CachedNetworkImage(

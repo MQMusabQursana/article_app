@@ -1,0 +1,62 @@
+{
+  "uri": "nyt://article/8cce5f2d-cfb0-5e8c-bbac-fcbe62b3d7cf",
+  "url": "https://www.nytimes.com/2023/12/18/nyregion/jonathan-majors-trial-verdict.html",
+  "id": 100000009227703,
+  "asset_id": 100000009227703,
+  "source": "New York Times",
+  "published_date": "2023-12-18",
+  "updated": "2023-12-18 23:05:26",
+  "section": "New York",
+  "subsection": "",
+  "nytdsection": "new york",
+  "adx_keywords": "Decisions and Verdicts;Actors and Actresses;Domestic Violence;Movies;Jabbari, Grace;Majors, Jonathan (1989- );Marvel Entertainment",
+  "column": null,
+  "byline": "By Jonah E. Bromwich, Erin Nolan and Nicole Sperling",
+  "type": "Article",
+  "title": "Marvel Will Part Ways With Jonathan Majors After Guilty Verdict",
+  "abstract": "Mr. Majors was convicted of misdemeanor assault and harassment for attacking his girlfriend in a car. The company dropped the actor shortly after.",
+  "des_facet": [
+    "Decisions and Verdicts",
+    "Actors and Actresses",
+    "Domestic Violence",
+    "Movies"
+  ],
+  "org_facet": [
+    "Marvel Entertainment"
+  ],
+  "per_facet": [
+    "Jabbari, Grace",
+    "Majors, Jonathan (1989- )"
+  ],
+  "geo_facet": [],
+  "media": [
+    {
+      "type": "image",
+      "subtype": "photo",
+      "caption": "Jonathan Majors was found guilty of two of the four counts he faced.",
+      "copyright": "Jefferson Siegel for The New York Times",
+      "approved_for_syndication": 1,
+      "media-metadata": [
+        {
+          "url": "https://static01.nyt.com/images/2023/12/15/multimedia/15majors-02-jhwq/15majors-02-jhwq-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/12/15/multimedia/15majors-02-jhwq/15majors-02-jhwq-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/12/15/multimedia/15majors-02-jhwq/15majors-02-jhwq-mediumThreeByTwo440.jpg",
+          "format": "mediumThreeByTwo440",
+          "height": 293,
+          "width": 440
+        }
+      ]
+    }
+  ],
+  "eta_id": 0
+}
